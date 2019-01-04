@@ -108,7 +108,7 @@ type GetProfiles struct {
 
 
 type GetProfilesResponse struct {
-	Profiles onvif.Profile
+	Profiles []onvif.Profile `xml:"Body>GetProfilesResponse>Profiles"`
 
 }
 
@@ -858,7 +858,7 @@ type GetStreamUri struct {
 
 
 type GetStreamUriResponse struct {
-	MediaUri onvif.MediaUri
+	MediaUri onvif.MediaUri `xml:"Body>GetStreamUriResponse>MediaUri"`
 
 }
 

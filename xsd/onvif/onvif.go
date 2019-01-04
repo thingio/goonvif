@@ -352,7 +352,7 @@ type Profile struct {
 	VideoEncoderConfiguration VideoEncoderConfiguration
 	AudioEncoderConfiguration AudioEncoderConfiguration
 	VideoAnalyticsConfiguration VideoAnalyticsConfiguration
-	PTZConfiguration PTZConfiguration
+	PTZConfiguration PTZConfiguration `xml:"Body>GetProfilesResponse>Profiles>PTZConfiguration"`
 	MetadataConfiguration MetadataConfiguration
 	Extension ProfileExtension
 }

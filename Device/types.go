@@ -478,7 +478,7 @@ type GetCapabilities struct {
 
 
 type GetCapabilitiesResponse struct {
-	Capabilities onvif.Capabilities
+	Capabilities onvif.Capabilities `xml:"Body>GetCapabilitiesResponse>Capabilities"`
 
 }
 
