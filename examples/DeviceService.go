@@ -12,8 +12,8 @@ import (
 )
 
 const (
-	login    = "admin"
-	password = "transwarp123"
+	login = "admin"
+	password = "Supervisor"
 )
 
 func readResponse(resp *http.Response) string {
@@ -26,7 +26,7 @@ func readResponse(resp *http.Response) string {
 
 func main() {
 	//Getting an camera instance
-	dev, err := goonvif.NewDevice("192.168.1.64:80")
+	dev, err := goonvif.NewDevice("192.168.13.14:80")
 	if err != nil {
 		panic(err)
 	}

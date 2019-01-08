@@ -21,7 +21,7 @@ type GetServiceCapabilities struct {
 
 
 type GetServiceCapabilitiesResponse struct {
-	Capabilities Capabilities `xml:""`
+	Capabilities Capabilities
 
 }
 
